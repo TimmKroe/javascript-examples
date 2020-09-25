@@ -2,10 +2,14 @@ import React, {Component} from 'react'
 
 class Form extends Component {
   initialState = {
-
+    // todo
   }
 
   state = this.initialState
+
+  submitForm () {
+    // todo
+  }
 
   render() {
     const { todo } = this.state
