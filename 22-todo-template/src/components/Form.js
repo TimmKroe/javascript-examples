@@ -2,13 +2,20 @@ import React, {Component} from 'react'
 
 class Form extends Component {
   initialState = {
-    // todo
+    todo: ''
   }
 
   state = this.initialState
 
-  submitForm () {
-    // todo
+  submitForm = () => {
+    this.props.handleSubmit(this.state.todo)
+    this.setState(this.initialState)
+  }
+
+  handleChange = (event) => {
+    this.setState({
+      todo: event.target.value
+    })
   }
 
   render() {

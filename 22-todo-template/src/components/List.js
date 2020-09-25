@@ -2,9 +2,15 @@ import React, {Component} from 'react'
 
 class List extends Component {
   render() {
+    const { todos } = this.props
+
     return (
       <ul>
-        <li>Eintrag</li>
+        {todos.map(todo => {
+          return (
+            <li key={todo}>{todo}</li>
+          )
+        })}
       </ul>
     )
   }

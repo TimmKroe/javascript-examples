@@ -5,11 +5,15 @@ import Form from './components/Form'
 
 class App extends Component {
   state = {
-    todos: []
+    todos: [
+      'Eintrag 1'
+    ]
   }
 
-  handleSubmit () {
-    // todo
+  handleSubmit = (todo) => {
+    this.setState({
+      todos: [...this.state.todos, todo]
+    })
   }
 
   render() {
