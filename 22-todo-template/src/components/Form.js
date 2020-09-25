@@ -8,14 +8,11 @@ class Form extends Component {
   state = this.initialState
 
   submitForm = () => {
-    this.props.handleSubmit(this.state.todo)
-    this.setState(this.initialState)
+    // todo
   }
 
   handleChange = (event) => {
-    this.setState({
-      todo: event.target.value
-    })
+    // todo
   }
 
   render() {

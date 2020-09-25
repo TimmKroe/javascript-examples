@@ -11,9 +11,7 @@ class App extends Component {
   }
 
   handleSubmit = (todo) => {
-    this.setState({
-      todos: [...this.state.todos, todo]
-    })
+    // todo
   }
 
   render() {

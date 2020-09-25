@@ -4,13 +4,10 @@ class List extends Component {
   render() {
     const { todos } = this.props
 
+    // todo
     return (
       <ul>
-        {todos.map(todo => {
-          return (
-            <li key={todo}>{todo}</li>
-          )
-        })}
+        
       </ul>
     )
   }
